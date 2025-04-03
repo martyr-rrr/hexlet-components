@@ -1,11 +1,10 @@
 [lint]
-select = ["E", "F", "I", "B"]
-ignore = ["E501"]
-
-[lint.isort]
-known-first-party = ["hexlet_components"]
+select = ["E", "F", "I", "B"]  # Основные группы правил
+ignore = ["E501"]              # Игнорировать длину строк
 
 [format]
-# Для этой версии используйте:
-indent-style = "space"  # или "tab"
-quote-style = "single"
+indent-style = "space"         # Использовать пробелы для отступов
+quote-style = "single"         # Одинарные кавычки
+
+[lint.isort]
+known-first-party = ["hexlet_components"]  # Локальные модули
